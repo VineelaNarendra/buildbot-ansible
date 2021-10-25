@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  name: Install httpd package by running this playbook at buildbot
+  tasks:
+    - name: Install httpd
+      package:
+        name: httpd
+        state: present
